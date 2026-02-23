@@ -126,7 +126,7 @@ const Square = ({ clr }) => {
 
   return (
     <div
-      className={`grid grid-cols-2 p-2 items-center justify-center basis-[40%] border border-black bg-${clr}-500 relative ${borderRudioHandler()}`}
+      className={`grid grid-cols-2 p-2 items-center justify-center basis-[35%] sm:basis-[40%] border border-black bg-${clr}-500 relative ${borderRudioHandler()}`}
     >
       <div
         onClick={() => MovmentHandler()}

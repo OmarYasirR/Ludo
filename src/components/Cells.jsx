@@ -6,10 +6,10 @@ import { RiStarLine, RiStarOffFill } from "react-icons/ri";
 const Cells = ({ position, color }) => {
   const cellsPosition = (po) => {
     if (po === "top" || po === "bottom") {
-      return 'grid-cols-3 basis-[20%]';
+      return 'grid-cols-3 basis-[30%] sm:basis-[20%]';
     }
     if (po === "right" || po === "left") {
-      return 'grid-cols-6 basis-[40%]';
+      return 'grid-cols-6 basis-[35%] sm:basis-[40%]';
     }
   };
 

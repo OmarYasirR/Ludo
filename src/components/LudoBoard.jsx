@@ -56,7 +56,7 @@ const LudoBoard = () => {
       </div>
       <div className="flex w-full">
         <Cells position={"left"} color={"red"} />
-        <div className="basis-[20%] relative border-gray-950 border">
+        <div className="basis-[30%] sm:basis-[20%] relative border-gray-950 border">
           <div class="triangle red bg-red-500">
             <div className=" h-full w-full flex flex-col self-center items-start justify-center"></div>
           </div>

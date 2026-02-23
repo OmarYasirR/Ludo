@@ -48,6 +48,7 @@ This project implements a fully functional Ludo (also known as Pachisi) board ga
 
 
 ludo-game/
+
 ├── public/
 │   ├── favicon.svg
 │   └── manifest.json

@@ -2,7 +2,7 @@
 
 A modern, responsive implementation of the classic Ludo board game built with React, Vite, and Context API for state management.
 
-## 📋 Overview
+## Overview
 
 This project implements a fully functional Ludo (also known as Pachisi) board game with support for 4 players (Red, Green, Blue, Yellow). The game features a custom-built interactive board, token movement mechanics, capturing rules, and turn-based gameplay.
 
@@ -46,7 +46,6 @@ This project implements a fully functional Ludo (also known as Pachisi) board ga
 
 ## Project Structure
 
-text
 
 ludo-game/
 ├── public/

@@ -1,6 +1,5 @@
 import { Exterminable } from "./Exterminable";
 import { killingHandler } from "./KillingHandler";
-import { useLudo } from '../Context/LudoContext'
 
 export const MultiStepsHandler = (token, steps) => {
     if (!token || !token.nodeType || token.nodeType !== 1) {

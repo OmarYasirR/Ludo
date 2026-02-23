@@ -1,7 +1,4 @@
-import React, { useRef } from "react";
-import "../style/Cells.css";
-import { FaStar } from "react-icons/fa";
-import { RiStarLine, RiStarOffFill } from "react-icons/ri";
+import { RiStarLine } from "react-icons/ri";
 
 const Cells = ({ position, color }) => {
   const cellsPosition = (po) => {

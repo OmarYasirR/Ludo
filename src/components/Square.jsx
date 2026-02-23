@@ -52,10 +52,8 @@ const Square = ({ clr }) => {
   const handleTokenClick = (e) => {
     const token = e.currentTarget;
     dispatch({ type: "ISMOVING", payload: false });
-    // dispatch({ type: "SET_ISROLLED", payload: true });
     if (token.getAttribute("position") === "home") {
       token.remove();
-      token.classList.add(`bg-white`);
       const fristCell = path[0];
       if (Array.from(fristCell.children).length) {
         dispatch({ type: "SET_IN_CELL", payload: fristCell.children[0] });
@@ -110,17 +108,11 @@ const Square = ({ clr }) => {
         return "rounded-br-md";
     }
   };
-  const TokenColorizer = () => {
-    switch (clr) {
-      case "red":
-        return "#ef4444";
-      case "green":
-        return "#22c55e";
-      case "blue":
-        return "#3b82f6";
-      default:
-        return "#eab308";
-    }
+  const TokenColorizer = {
+    red: 'text-red-700',
+    green: 'text-green-700',
+    blue: 'text-blue-700',
+    yellow: 'text-yellow-700'
   };
 
 
@@ -143,15 +135,14 @@ const Square = ({ clr }) => {
             onClick={(e) => {
               handleTokenClick(e);
             }}
-            className={`pwan ${clr} flex justify-center items-center text-2xl shadow-xl ease-in-out duration-75 pointer-events-none rounded-full z-10 p-[1px] ${
+            className={`pwan ${clr} flex justify-center items-center text-2xl shadow-xl ease-in-out duration-75 pointer-events-none rounded-full z-10 p-[1px] m-[-10px] sm:m-[-8px] ${
               enableMove(`${clr}-${i}`) ? "canMove" : ""
             }`}
             position="home"
             id={`${clr}-${i}`}
           >
             <GiChessPawn
-              className={`text-2xl`}
-              style={{ color: TokenColorizer() }}
+              className={`text-2xl ${TokenColorizer[clr]} `}
             />
           </span>
         </div>

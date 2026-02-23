@@ -18,7 +18,6 @@ export const useMove = () => {
     token.remove()    
     path[0].appendChild(token);
     token.setAttribute("position", "0");
-    token.classList.add(`bg-white`)
     dispatch({ type: "SET_ISROLLED", payload: false })
     dispatch({ type: "ISMOVING", payload: false }) 
   };

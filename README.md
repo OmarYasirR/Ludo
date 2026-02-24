@@ -100,7 +100,7 @@ ludo-game/
 
 ### Installation
 
-1.  Clone the repository:
+1.Clone the repository:
     
 
 ```bash
@@ -109,7 +109,7 @@ git clone https://github.com/yourusername/ludo-game.git
 cd ludo-game
 ```
 
-2.  Install dependencies:
+2.Install dependencies:
     
 
 ```bash
@@ -119,7 +119,7 @@ npm install
 yarn install
 ```
 
-3.  Start the development server:
+3.Start the development server:
     
 
 ```bash

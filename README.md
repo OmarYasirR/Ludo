@@ -103,31 +103,32 @@ ludo-game/
 1.  Clone the repository:
     
 
-bash
+```bash
 
 git clone https://github.com/yourusername/ludo-game.git
 cd ludo-game
+```
 
 2.  Install dependencies:
     
 
-bash
+```bash
 
 npm install
 \# or
 yarn install
+```
 
 3.  Start the development server:
     
 
-bash
+```bash
 
 npm run dev
 \# or
 yarn dev
+```
 
-4.  Open [http://localhost:3000](http://localhost:3000/) to view it in the browser.
-    
 
 ## Game Rules
 
@@ -274,7 +275,7 @@ Simple dice display showing the current value:
 
 ### Token Movement
 
-javascript
+```javascript
 
 // Multi-step movement with animation
 const MultiStepsHandler \= (token, diceValue) \=> {
@@ -283,6 +284,7 @@ const MultiStepsHandler \= (token, diceValue) \=> {
   // Handle reaching home (finish)
   // Update game state
 };
+```
 
 ### Capture Mechanism
 
@@ -327,7 +329,7 @@ Component-specific styles are defined in CSS files:
 
 The board uses CSS clip-path to create triangular home areas:
 
-css
+```css
 
 .triangle.red {
   clip-path: polygon(0% 0%, 50% 50%, 0% 100%);
@@ -336,10 +338,11 @@ css
   clip-path: polygon(100% 0%, 50% 50%, 0% 0%);
 }
 /\* etc. \*/
+```
 
 ## Key Dependencies
 
-json
+```json
 
 {
   "react": "^18.2.0",
@@ -350,12 +353,13 @@ json
   "tailwindcss": "^3.4.17",
   "vite": "^7.2.2"
 }
+```
 
 ## Configuration Files
 
 ### Vite Configuration
 
-javascript
+```javascript
 
 // vite.config.js
 export default defineConfig({
@@ -369,6 +373,7 @@ export default defineConfig({
     open: true
   }
 });
+```
 
 ### Tailwind Configuration
 
@@ -385,7 +390,7 @@ Extended with custom values for game board dimensions:
 
 The board paths are defined in `pathsClasess.json` with 56 cells per player:
 
-json
+```json
 
 \[
   {
@@ -396,6 +401,7 @@ json
   },
   // Other players...
 \]
+```
 
 Each cell is identified by color-index combination (e.g., "red-1", "green-15").
 
@@ -413,12 +419,13 @@ Each cell is identified by color-index combination (e.g., "red-1", "green-15").
 
 While not currently implemented, the project structure supports adding tests:
 
-bash
+```bash
 
 \# Run tests (when implemented)
 npm run test
 \# or
 yarn test
+```
 
 ## Responsive Design
 
@@ -435,21 +442,23 @@ The game board adapts to different screen sizes:
 
 Build for production:
 
-bash
+```bash
 
 npm run build
 \# or
 yarn build
 
 Preview production build:
+```
 
-bash
+```bash
 
 npm run preview
 \# or
 yarn preview
+```
 
-### Deploy to Netlify/Vercel
+### Deploy to Vercel
 
 The project is configured for easy deployment with zero configuration.
 

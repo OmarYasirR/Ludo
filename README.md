@@ -4,9 +4,8 @@ A modern, responsive implementation of the classic Ludo board game built with Re
 
 ## Overview
 
-This project implements a fully functional Ludo (also known as Pachisi) board game with support for 4 players (Red, Green, Blue, Yellow). The game features a custom-built interactive board, token movement mechanics, capturing rules, and turn-based gameplay.
+This project implements a fully functional Ludo board game with support for 4 players (Red, Green, Blue, Yellow). The game features a custom-built interactive board, token movement mechanics, capturing rules, and turn-based gameplay.
 
-[https://via.placeholder.com/800x400?text=Ludo+Board+Game](https://via.placeholder.com/800x400?text=Ludo+Board+Game)
 
 ## Features
 
@@ -46,9 +45,8 @@ This project implements a fully functional Ludo (also known as Pachisi) board ga
 
 ## Project Structure
 
-
+```text
 ludo-game/
-
 ├── public/
 │   ├── favicon.svg
 │   └── manifest.json
@@ -89,6 +87,7 @@ ludo-game/
 ├── tailwind.config.js
 ├── vite.config.js
 └── README.md
+```
 
 ## Getting Started
 
@@ -171,6 +170,8 @@ The game uses React Context API for state management with a reducer pattern.
 
 ### Game State Structure
 
+
+```
 javascript
 
 const initState \= {
@@ -188,6 +189,8 @@ const initState \= {
   isLoading: true,     // Initial loading state
   isMoving: false      // Whether token movement is in progress
 };
+
+```
 
 ### Key Actions
 

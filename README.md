@@ -170,16 +170,13 @@ The game uses React Context API for state management with a reducer pattern.
 
 ### Game State Structure
 
-
-```
-javascript
-
-const initState \= {
-  playersData: \[\],     // Array of player data (paths, tokens, etc.)
-  tokens: \[\],          // Current player's tokens
-  path: \[\],            // Current player's path cells
-  tokensParents: \[\],   // Token container elements
-  tknsInHome: \[\],      // Tokens currently in home
+```javascript
+const initState = {
+  playersData: [],     // Array of player data (paths, tokens, etc.)
+  tokens: [],          // Current player's tokens
+  path: [],            // Current player's path cells
+  tokensParents: [],   // Token container elements
+  tknsInHome: [],      // Tokens currently in home
   tknsInCell: null,    // Tokens in the same cell
   color: null,         // Current player's color
   home: null,          // Current player's home element
@@ -189,7 +186,6 @@ const initState \= {
   isLoading: true,     // Initial loading state
   isMoving: false      // Whether token movement is in progress
 };
-
 ```
 
 ### Key Actions

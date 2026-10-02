@@ -1,4 +1,4 @@
-[project screenshot](public/favicon.svg)
+![project screenshot](public/favicon.svg)
 
 
 # Ludo Game - React + Vite + Context API

@@ -1,3 +1,6 @@
+[project screenshot](public/favicon.svg)
+
+
 # Ludo Game - React + Vite + Context API
 
 A modern, responsive implementation of the classic Ludo board game built with React, Vite, and Context API for state management.
